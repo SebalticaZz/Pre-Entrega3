@@ -1,0 +1,32 @@
+header {
+    @include text($mainTextColor,$textXl, 7, normal ,$lilita);
+    background-color: $mainColor;
+} 
+
+.logo {
+    width: 6vw;
+}
+
+
+.nav-link{
+    margin: 0 0.8vw;
+    text-align: center;
+}
+
+.colorNav {
+    font-size:$textMd;
+    padding-left: $textMd;
+}
+
+
+.colorNav a{
+    color: $mainTextColor;
+}
+
+.colorNav a:hover{
+    color:$hoverColor;
+}
+
+.navbar-toggler {
+    background: $mainTextColor;
+}

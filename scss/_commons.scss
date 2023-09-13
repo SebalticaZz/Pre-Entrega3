@@ -1,0 +1,8 @@
+main{
+    @include flexBox(center,space-around,row,wrap);
+    background-image: $backgroundImage;
+    background-position: center;
+    background-repeat:repeat-y repeat-x;
+    font-family: $roboto;
+    color: $mainTextColor;
+}

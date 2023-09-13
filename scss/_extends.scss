@@ -1,0 +1,11 @@
+.contenedorBienvenida{
+    h2{
+        @extend h1;
+        font-size: $textXl;
+    }
+    p{
+        @extend h1;
+        font-size: $textMd;
+        font-style: oblique;
+    }
+}

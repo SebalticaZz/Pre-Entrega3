@@ -17,21 +17,12 @@ header {
     font-family: 'Lilita One', cursive;
 } 
 
-header span{
-    color:#fafafa;
-}
+
 
 .logo {
-    display: inline-block;
     width: 6vw;
 }
 
-.textoLogo {
-    display: inline-block;
-    font-size: 3rem;
-    font-weight: 300;
-    font-family: 'Lilita One', cursive;
-}
 
 .nav-link{
     margin: 0 0.8vw;
@@ -49,53 +40,13 @@ header span{
 }
 
 .colorNav a:hover{
-    color:#b1aaaa
+    color:#b1aaaa;
 }
 
 .navbar-toggler {
     background:#fafafa;
-    border-color: #fafafa;
 }
 
-/* .logo, .imagenLogo, .textoLogo {
-    display: inline-block;
-}
-
-.logo{
-    display: flex;
-} */
-
-/* header a {
-    text-decoration: none;
-    color: #fafafa;
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: 70px;
-    font-family: 'Lilita One', cursive;
-    
-} */
-
-/* ul{
-    list-style-type: none;
-} */
-
-
-/* .imagenLogo {
-    width: 70px;
-    cursor: pointer;
-}
-
-
-.navLink li{
-    display:inline-block;
-    padding: 0 30px;
-}
-
-.contacto {
-    background-color: #5c5470;
-    padding: 10px 10px;
-    border-radius: 50px ;
-} */
 
 main{
     background-image: url(../img/patitas.png);

@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+header {
+  color: #fafafa;
+  font-size: 2em;
+  font-weight: 7;
+  font-style: normal;
+  text-align: "Lilita One", cursive;
+  background-color: #212121;
+}
+
+.logo {
+  width: 6vw;
+}
+
+.nav-link {
+  margin: 0 0.8vw;
+  text-align: center;
+}
+
+.colorNav {
+  font-size: 1em;
+  padding-left: 1em;
+}
+
+.colorNav a {
+  color: #fafafa;
+}
+
+.colorNav a:hover {
+  color: #b1aaaa;
+}
+
+.navbar-toggler {
+  background: #fafafa;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: url("../img/patitas.png");
+  background-position: center;
+  background-repeat: repeat-y repeat-x;
+  font-family: "Roboto", sans-serif;
+  color: #fafafa;
+}
+
+.contenedorBienvenida {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #212121;
+  margin: 30px 10px;
+  padding: 3vh 3vw;
+  border-radius: 50px;
+  width: 600px;
+}
+.contenedorBienvenida h1, .contenedorBienvenida p, .contenedorBienvenida h2 {
+  color: #212121;
+  font-size: 3em;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+}
+.contenedorBienvenida img {
+  width: 30%;
+}
+
+.contenedorBienvenida h2 {
+  font-size: 2em;
+}
+.contenedorBienvenida p {
+  font-size: 1em;
+  font-style: oblique;
+}
+
+/*# sourceMappingURL=main.css.map */
