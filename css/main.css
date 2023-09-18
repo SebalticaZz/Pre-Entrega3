@@ -71,7 +71,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding-top: 20px;
 }
 .buscador label {
@@ -355,6 +355,10 @@ main {
   }
 }
 @media (max-width: 480px) {
+  .buscador input {
+    width: 50vw;
+    font-size: 1em;
+  }
   .catalogo img {
     width: 300px;
   }

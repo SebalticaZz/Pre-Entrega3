@@ -12,6 +12,12 @@
 }
 
 @media (max-width:480px){
+    .buscador{
+        input{
+            width: 50vw;
+            font-size: $textMd;
+        }
+    }
     .catalogo img{
         width:300px;
     }

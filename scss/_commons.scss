@@ -21,7 +21,7 @@ main{
 }
 
 .buscador{
-    @include flexBox(center,center,row,wrap);
+    @include flexBox(center,center,row,nowrap);
     padding-top: 20px;
     label{
         @include text($mainColor,$textMd,bolder,normal,start);
