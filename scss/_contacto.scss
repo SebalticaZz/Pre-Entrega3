@@ -54,7 +54,7 @@
     background-color: $mainColor;
     @include text($mainTextColor,$textMd, 0,normal,center);
     font-family: $lilita;
-    padding:10px;
+    padding: 10px 0;
     border-radius: 50px;
     margin-bottom: 20px;
 }
