@@ -5,7 +5,18 @@
     }
     p{
         @extend h1;
-        font-size: $textMd;
+        align-self: start;
+        font-size: $textL;
         font-style: oblique;
+    }
+}
+
+.grande{
+    @extend .seccion;
+    width: 80%;
+
+    h3{
+        @include text($mainTextColor,$textXl,0,normal,start);
+        font-family: $lilita;
     }
 }

@@ -7,6 +7,7 @@ header {
   font-style: normal;
   text-align: "Lilita One", cursive;
   background-color: #212121;
+  font-family: "Lilita One", cursive;
 }
 
 .logo {
@@ -35,6 +36,11 @@ header {
   background: #fafafa;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -48,12 +54,95 @@ main {
   color: #fafafa;
 }
 
-.contenedorBienvenida {
+.catalogoPag {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 30px;
+  background-color: #eeeeee;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.buscador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+.buscador label {
+  color: #212121;
+  font-size: 1em;
+  font-weight: bolder;
+  font-style: normal;
+  text-align: start;
+}
+.buscador input {
+  width: 60vw;
+  height: 50px;
+  border-radius: 40px;
+  font-size: 1em;
+}
+
+.producto {
+  width: 300px;
+  height: 500px;
+  margin: 20px 0;
+  border-radius: 0 0 30px 30px;
+  background-color: #212121;
+}
+.producto img {
+  object-fit: cover;
+  width: 300px;
+}
+
+.tituloProducto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 300px;
+  height: 50px;
+}
+.tituloProducto h3 {
+  color: #fafafa;
+  font-size: 1em;
+  font-weight: 700;
+  font-style: normal;
+  text-align: start;
+  padding: 0 30px;
+}
+
+.descripcionProducto {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 30px;
+  height: 150px;
+  margin-top: -15px;
+}
+.descripcionProducto p {
+  color: #fafafa;
+  font-size: 1em;
+  font-weight: 700;
+  font-style: italic;
+  text-align: start;
+  padding: 0 30px;
+  margin: 5px 0;
+}
+
+.contenedorBienvenida {
+  display: grid;
+  grid-row: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
   background-color: #212121;
   margin: 30px 10px;
   padding: 3vh 3vw;
@@ -61,7 +150,7 @@ main {
   width: 600px;
 }
 .contenedorBienvenida h1, .contenedorBienvenida p, .contenedorBienvenida h2 {
-  color: #212121;
+  color: #fafafa;
   font-size: 3em;
   font-weight: 700;
   font-style: italic;
@@ -71,12 +160,118 @@ main {
   width: 30%;
 }
 
+.seccion, .grande {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #212121;
+  width: 1000px;
+  margin-top: 20px;
+  padding: 1vh 1vw;
+}
+.seccion h3, .grande h3 {
+  padding: 0 30px;
+  color: #fafafa;
+  font-size: 2em;
+  font-weight: 700;
+  font-style: italic;
+  text-align: start;
+}
+
+.catalogo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #eeeeee;
+  width: 1000px;
+  margin-bottom: 2vh;
+}
+.catalogo img {
+  width: 450px;
+  border-radius: 20px;
+  margin: 2vh 10px;
+}
+
+@media (max-width: 1263px) {
+  .contenedorBienvenida {
+    width: 1100px;
+    padding: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .catalogo img {
+    width: 350px;
+  }
+}
+@media (max-width: 480px) {
+  .catalogo img {
+    width: 300px;
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 200px;
+  color: #fafafa;
+  text-align: center;
+  font-size: 1em;
+  background-color: #212121;
+}
+footer div {
+  display: inline-block;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-transform: uppercase;
+  width: 50%;
+  padding: 0 20px;
+}
+.copyright img {
+  width: 20px;
+  margin: -2px 5px 0 0;
+}
+
+.datos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 50%;
+}
+
 .contenedorBienvenida h2 {
   font-size: 2em;
 }
 .contenedorBienvenida p {
-  font-size: 1em;
+  align-self: start;
+  font-size: 1.3em;
   font-style: oblique;
+}
+
+.grande {
+  width: 80%;
+}
+.grande h3 {
+  color: #fafafa;
+  font-size: 2em;
+  font-weight: 0;
+  font-style: normal;
+  text-align: start;
+  font-family: "Lilita One", cursive;
 }
 
 /*# sourceMappingURL=main.css.map */

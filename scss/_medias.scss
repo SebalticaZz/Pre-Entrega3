@@ -1,0 +1,18 @@
+@media (max-width:1263px){
+    .contenedorBienvenida{
+        width: 1100px;
+        padding: 50px;
+    }
+}
+
+@media (max-width:600px){
+    .catalogo img{
+        width:350px;
+    }
+}
+
+@media (max-width:480px){
+    .catalogo img{
+        width:300px;
+    }
+}

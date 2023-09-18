@@ -1,0 +1,30 @@
+footer{
+    @include flexBox(center,center,row,wrap);
+    height: 200px;
+    color: $mainTextColor;
+    text-align: center;
+    font-size: $textMd;
+    background-color: $mainColor;
+
+    div{
+        display: inline-block;
+    }
+}
+
+.copyright {
+    @include flexBox(center,center,row,nowrap);
+    text-transform: uppercase;
+    width: 50%;
+    padding: 0 20px;
+
+    img{
+        width: 20px;
+        margin: -2px 5px 0 0;
+    }
+}
+
+.datos {
+    @include flexBox(center,center,column,wrap);
+    align-items: center;
+    width: 50%;
+}

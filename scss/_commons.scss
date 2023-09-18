@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 main{
     @include flexBox(center,space-around,row,wrap);
     background-image: $backgroundImage;
@@ -5,4 +10,62 @@ main{
     background-repeat:repeat-y repeat-x;
     font-family: $roboto;
     color: $mainTextColor;
+}
+
+.catalogoPag {
+    @include flexBox(center,center,row,wrap);
+    gap:30px;
+    background-color: $secondaryColor;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.buscador{
+    @include flexBox(center,center,row,wrap);
+    padding-top: 20px;
+    label{
+        @include text($mainColor,$textMd,bolder,normal,start);
+    }
+
+    input{
+        width: 60vw;
+        height: 50px;
+        border-radius: 40px;
+        font-size: $textMd;
+    }
+}
+
+.producto{
+    width:300px;
+    height: 500px;
+    margin: 20px 0;
+    border-radius: 0 0 30px 30px;
+    background-color: $mainColor;
+
+    img{
+        object-fit: cover;
+        width: 300px;
+    }
+}
+
+.tituloProducto{
+    @include flexBox(center, center, row,nowrap);
+    width: 300px;
+    height: 50px;
+    h3{
+        @include text($mainTextColor,$textMd,$weightXl,normal,start);
+        padding: 0 30px;
+    }
+}
+
+.descripcionProducto{
+    @include flexBox(center,flex-start,column,nowrap);
+    width: 30px;
+    height: 150px;
+    margin-top: -15px;
+    p{
+        @include text($mainTextColor,$textMd,$weightXl,italic,start);
+        padding: 0 30px;
+        margin: 5px 0;
+    }
 }
