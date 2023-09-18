@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Contacto AtomShop </title>
+    <meta name="description" content="Venta de articulos de perros en Chile con envio nacional">
+    <meta name="keywords" content="Ropa de perro, juguetes de perro, camas de perro">
+    <meta name="author" content="Sebastian Sepulveda">
+    <title> AtomShop - Contacto </title>
     <!-- BS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     
@@ -52,16 +55,13 @@
             </div>
 
             <form class="formularioContacto">
-                <div class="labelFormulario">
                     <label for="formContactoName"> Nombre:</label> 
+                    <input class="form" id="formContactoName" type="text" maxlength="50" required>
                     <label for="formContactoCorreo"> Correo: </label> 
+                    <input class="form" id="formContactoCorreo" type="email" maxlength="50" required>
                     <label for="formContactoCelular"> Celular: </label>
-                </div>
-                <div class="inputFormulario">
-                    <input id="formContactoName" type="text" maxlength="50" required>
-                    <input id="formContactoCorreo" type="email" maxlength="50" required>
-                    <input id="formContactoCorreo" type="text" required>
-                </div>
+                    <input class="form" id="formContactoCelular" type="text" required>
+               
                 <input class="botonFormulario" type="submit">
             </form>
 

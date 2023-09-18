@@ -196,6 +196,153 @@ main {
   margin: 2vh 10px;
 }
 
+.bloqueContacto {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 50px;
+  background-color: #212121;
+  padding: 40px;
+  width: 85%;
+  height: 1000px;
+  margin: 10px 0;
+}
+
+.textoContacto {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.textoContacto h2 {
+  color: #fafafa;
+  font-size: 3em;
+  font-weight: 700;
+  font-style: normal;
+  text-align: start;
+  margin-bottom: 20px;
+}
+.textoContacto h3 {
+  color: #fafafa;
+  font-size: 1.3em;
+  font-weight: 700;
+  font-style: normal;
+  text-align: start;
+}
+
+.formularioContacto {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #eeeeee;
+  border-radius: 50px;
+  width: 80%;
+  height: 40%;
+  color: #212121;
+  padding: 20px;
+}
+.formularioContacto label {
+  width: 100%;
+  color: #212121;
+  font-size: 1em;
+  font-weight: 700;
+}
+.formularioContacto .form {
+  margin: auto;
+  border-radius: 50px;
+  width: 80%;
+  height: 35px;
+  font-size: 1em;
+  padding: 20px;
+  font-weight: 700;
+}
+
+.botonFormulario {
+  margin: auto;
+  width: 30%;
+  background-color: #212121;
+  color: #fafafa;
+  font-size: 1em;
+  font-weight: 0;
+  font-style: normal;
+  text-align: center;
+  font-family: "Lilita One", cursive;
+  padding: 10px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+.sucursalyRedes {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  flex-wrap: nowrap;
+  color: #fafafa;
+  font-size: 1em;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+
+.sucursalyContacto {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  color: #fafafa;
+  font-size: 1em;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+
+.redes {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.redes img {
+  width: 3.5vw;
+  margin: 0 15px;
+}
+
+.contenedorBienvenida h2 {
+  font-size: 3em;
+}
+.contenedorBienvenida p {
+  align-self: start;
+  font-size: 1.3em;
+  font-style: oblique;
+}
+
+.grande {
+  width: 80%;
+}
+.grande h3 {
+  color: #fafafa;
+  font-size: 2em;
+  font-weight: 0;
+  font-style: normal;
+  text-align: start;
+  font-family: "Lilita One", cursive;
+}
+
 @media (max-width: 1263px) {
   .contenedorBienvenida {
     width: 1100px;
@@ -210,6 +357,33 @@ main {
 @media (max-width: 480px) {
   .catalogo img {
     width: 300px;
+  }
+}
+@media (max-width: 992px) {
+  .textoContacto {
+    margin: 10px;
+  }
+  .textoContacto h2 {
+    font-size: 2em;
+    margin-bottom: 5px;
+  }
+  .textoContacto h3 {
+    font-size: 1em;
+  }
+  .sucursalyRedes {
+    font-size: 0.8em;
+  }
+  .sucursalyContacto {
+    flex-flow: row wrap;
+  }
+  .redes {
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+  }
+  .redes img {
+    width: 4vw;
+    margin-bottom: 10px;
   }
 }
 footer {
@@ -251,27 +425,6 @@ footer div {
   flex-wrap: wrap;
   align-items: center;
   width: 50%;
-}
-
-.contenedorBienvenida h2 {
-  font-size: 2em;
-}
-.contenedorBienvenida p {
-  align-self: start;
-  font-size: 1.3em;
-  font-style: oblique;
-}
-
-.grande {
-  width: 80%;
-}
-.grande h3 {
-  color: #fafafa;
-  font-size: 2em;
-  font-weight: 0;
-  font-style: normal;
-  text-align: start;
-  font-family: "Lilita One", cursive;
 }
 
 /*# sourceMappingURL=main.css.map */

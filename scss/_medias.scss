@@ -16,3 +16,35 @@
         width:300px;
     }
 }
+
+@media (max-width:992px){
+    .textoContacto{
+        h2{
+            font-size: $textXl;
+            margin-bottom: 5px;
+        }
+
+        h3{
+            font-size: $textMd;
+        }
+
+        margin:10px;
+
+    }
+    .sucursalyRedes{
+        font-size: 0.8em;
+    }
+    .sucursalyContacto{
+        flex-flow: row wrap;
+
+    }
+    .redes{
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        img{
+            width: 4vw;
+            margin-bottom: 10px;
+        }
+    }
+}

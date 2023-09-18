@@ -1,0 +1,87 @@
+.bloqueContacto {
+    @include flexBox(center,flex-start,row,wrap);
+    border-radius: 50px;
+    background-color: $mainColor;
+    padding: 40px;
+    width: 85%;
+    height: 1000px;
+    margin: 10px 0;
+}
+
+.textoContacto{
+    width:80%;
+    @include flexBox(space-around,flex-start,column,wrap);
+    padding:20px;
+    h2{
+        @include text($mainTextColor,$textXxl,$weightXl,normal,start);
+        margin-bottom: 20px;
+    }
+
+    h3{
+        @include text($mainTextColor,$textL,$weightXl,normal,start);
+    }
+}
+
+.formularioContacto{
+    @include flexBox(center,flex-start,column,wrap);
+    background-color: $secondaryColor;
+    border-radius: 50px;
+    width: 80%;
+    height:40%;
+    color: $mainColor;
+    padding:20px;
+    label{
+        width:100%;
+        color:$mainColor;
+        font-size: $textMd;
+        font-weight: $weightXl;
+    }
+
+    .form{
+        margin:auto;
+        border-radius: 50px;
+        width: 80%;
+        height: 35px;
+        font-size: $textMd;
+        padding:20px;
+        font-weight: $weightXl;
+    }
+}
+
+.botonFormulario{
+    margin:auto;
+    width: 30%;
+    background-color: $mainColor;
+    @include text($mainTextColor,$textMd, 0,normal,center);
+    font-family: $lilita;
+    padding:10px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.sucursalyRedes{
+    width:90%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    flex-wrap:nowrap;
+    @include text($mainTextColor,$textMd,$weightXl,normal,center);
+}
+
+.sucursalyContacto{
+    width: 100%;
+    height: 80%;
+    @include flexBox(center,center,column,nowrap);
+    @include text($mainTextColor,$textMd,$weightXl,normal,center);
+}
+
+.redes{
+    width:80%;
+    height: 80%;
+    @include flexBox(flex-end,center,row,nowrap);
+    img{
+        width: 3.5vw;
+        margin:0 15px;
+    }
+}
