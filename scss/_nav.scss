@@ -1,6 +1,6 @@
 header {
     @include text($mainTextColor,$textXl, 7, normal ,$lilita);
-    background-color: $mainColor;
+    background-color: $mainSecond;
     font-family: $lilita;
 } 
 
