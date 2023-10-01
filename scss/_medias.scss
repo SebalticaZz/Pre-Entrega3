@@ -1,10 +1,34 @@
 
 @media (max-width:480px){
+    .textoContacto{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:1024px){
+    .btn-comprar{
+        width:20vw;
+    }
+}
+
+@media (max-width:600px){
+    .btn-comprar{
+        width:40vw
+    }
+
     .buscador{
+        label{
+            font-size: $textMd;
+        }
         input{
             width: 50vw;
             font-size: $textMd;
         }
+    }
+
+    .catalogo{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
     }
 }
 

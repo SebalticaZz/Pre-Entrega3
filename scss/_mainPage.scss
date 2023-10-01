@@ -1,5 +1,6 @@
 .inicio {
     display: grid;
+    width: 100%;
     grid-template-columns: 
     repeat(
         auto-fit,
@@ -29,10 +30,15 @@
 
 }
 
+.catalogosInicio{
+    @include flexBox(center,center,column,nowrap);
+    width:100%;
+}
+
 .seccion{
     @include flexBox(flex-start,center,row,wrap);
     background-color: $mainColor;
-    width: 1000px;
+    width: 90%;
     margin-top: 20px;
     padding: 1vh 1vw;
 
@@ -44,20 +50,12 @@
 
 .catalogo{
     display: grid;
-    grid-template-columns: 
-    repeat(
-        auto-fit,
-        minmax(150px,1fr)
-    );
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
     gap: 10px;
     background-color: $secondaryColor;
-    width: 1000px;
+    width: 90%;
     margin-bottom: 2vh;
-    padding:10px;
-
-    img{
-        width: 100%;
-        height: auto;
-        border-radius: 20px;
-    }
+    padding:20px;
+    
 }

@@ -76,7 +76,7 @@ main {
 }
 .buscador label {
   color: #212121;
-  font-size: 1em;
+  font-size: 1.3em;
   font-weight: bolder;
   font-style: normal;
   text-align: start;
@@ -84,20 +84,73 @@ main {
 .buscador input {
   width: 60vw;
   height: 50px;
-  border-radius: 40px;
+  border-radius: 10px;
+  text-align: center;
   font-size: 1em;
 }
 
+.btn-comprar {
+  padding: 10px;
+  width: 14vw;
+  background-color: rgb(235, 233, 233);
+  border-radius: 5px;
+  border: none;
+  color: rgb(26, 24, 24);
+  font-size: 1rem;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-comprar:hover {
+  background-color: #b4b3b3;
+  transform: scale(1.05);
+}
+
+.card-basic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  color: #fafafa;
+  font-size: 1.3em;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+}
+.card-basic img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.card-basic div {
+  padding: 20px;
+  background-color: rgb(26, 24, 24);
+  width: 100%;
+}
+
+.productos {
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
 .producto {
-  width: 300px;
-  height: 500px;
+  width: 100%;
+  height: auto;
   margin: 20px 0;
   border-radius: 0 0 30px 30px;
   background-color: #212121;
+  cursor: pointer;
 }
 .producto img {
   object-fit: cover;
-  width: 300px;
+  width: 100%;
 }
 
 .tituloProducto {
@@ -106,12 +159,12 @@ main {
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 300px;
-  height: 50px;
+  width: 100%;
+  padding: 10px;
 }
 .tituloProducto h3 {
   color: #fafafa;
-  font-size: 1em;
+  font-size: 1.3em;
   font-weight: 700;
   font-style: normal;
   text-align: start;
@@ -124,7 +177,7 @@ main {
   align-items: flex-start;
   flex-direction: column;
   flex-wrap: nowrap;
-  width: 30px;
+  width: 100%;
   height: 150px;
   margin-top: -15px;
 }
@@ -138,8 +191,18 @@ main {
   margin: 5px 0;
 }
 
+.btnCompra {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 .inicio {
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
 }
 
@@ -165,6 +228,15 @@ main {
   width: 30%;
 }
 
+.catalogosInicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
 .seccion, .grande {
   display: flex;
   justify-content: flex-start;
@@ -172,7 +244,7 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   background-color: #212121;
-  width: 1000px;
+  width: 90%;
   margin-top: 20px;
   padding: 1vh 1vw;
 }
@@ -187,17 +259,13 @@ main {
 
 .catalogo {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
   gap: 10px;
   background-color: #eeeeee;
-  width: 1000px;
+  width: 90%;
   margin-bottom: 2vh;
-  padding: 10px;
-}
-.catalogo img {
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
+  padding: 20px;
 }
 
 .bloqueContacto {
@@ -215,9 +283,9 @@ main {
 }
 
 .textoContacto {
-  width: 80%;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   flex-wrap: wrap;
@@ -246,8 +314,8 @@ main {
   flex-direction: column;
   flex-wrap: wrap;
   background-color: #eeeeee;
-  border-radius: 50px;
-  width: 80%;
+  border-radius: 10px;
+  width: 95%;
   height: 40%;
   color: #212121;
   padding: 20px;
@@ -260,7 +328,7 @@ main {
 }
 .formularioContacto .form {
   margin: auto;
-  border-radius: 50px;
+  border-radius: 10px;
   width: 80%;
   height: 35px;
   font-size: 1em;
@@ -270,7 +338,7 @@ main {
 
 .botonFormulario {
   margin: auto;
-  width: 30%;
+  width: 30vw;
   background-color: #212121;
   color: #fafafa;
   font-size: 1em;
@@ -281,6 +349,13 @@ main {
   padding: 10px 0;
   border-radius: 50px;
   margin-bottom: 20px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.botonFormulario:hover {
+  background-color: #090909;
+  transform: scale(1.05);
 }
 
 .sucursalyRedes {
@@ -348,9 +423,29 @@ main {
 }
 
 @media (max-width: 480px) {
+  .textoContacto {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1024px) {
+  .btn-comprar {
+    width: 20vw;
+  }
+}
+@media (max-width: 600px) {
+  .btn-comprar {
+    width: 40vw;
+  }
+  .buscador label {
+    font-size: 1em;
+  }
   .buscador input {
     width: 50vw;
     font-size: 1em;
+  }
+  .catalogo {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
   }
 }
 @media (max-width: 992px) {
